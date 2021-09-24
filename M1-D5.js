@@ -13,6 +13,12 @@ ASSIGNMENT RULES
 */
 
 /* WRITE YOUR ANSWER HERE */
+var AreaOfRectangle
+const area = function(l1,l2) {
+    AreaOfRectangle = l1 * l2 
+}
+area(2,4)
+console.log(AreaOfRectangle)
 
 /* EXERCISE 2
  Write a function called "crazySum" which receives two integers as parameters.
@@ -20,6 +26,16 @@ ASSIGNMENT RULES
 */
 
 /* WRITE YOUR ANSWER HERE */
+const crazySum = function (integer1,integer2) {
+    if (integer1===integer2){
+        return (integer1+integer2)*3
+    }
+    else{
+        return (integer1+integer2)
+    }
+}
+console.log("The sum of two different input integers is:",crazySum(1,2))
+console.log("The sum of two same input integers will be the sum two integers multiplied by 3 which will sum to:",crazySum(1,1))
 
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
@@ -27,7 +43,16 @@ ASSIGNMENT RULES
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+const crazyDiff=function(givenNumber){
+    if (givenNumber>19){
+        return Math.abs(givenNumber-19)*3
+    }
+    else{
+        return Math.abs(givenNumber-19)
+    }
+}
+console.log("The absolute difference between given number and 19 is multiplied by 3 since, given number is greater than 19 resultinh:",crazyDiff(20))
+console.log("The absoulute difference between given number and 19 is:", crazyDiff(14))
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
