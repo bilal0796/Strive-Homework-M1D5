@@ -146,12 +146,18 @@ const upperFirst=function (inputStringFromUser) {
     return inputString2
 }
 console.log(upperFirst("Hi how are you, My name is bilal"))
+
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+var modifiedstring
+const cutString=function (StringFromUser) {
+    modifiedstring=StringFromUser.substring(1,StringFromUser.length-1)
+    return modifiedstring
+}
+console.log(cutString("Bilal"))
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
