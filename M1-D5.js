@@ -118,6 +118,17 @@ check3and7(56)
 */
 
 /* WRITE YOUR ANSWER HERE */
+var stringToarray
+var reverseStringArray
+var joinreversedArray
+const reverseString= function (givenString) {
+    return givenString.split('').reverse().join('')
+    /*stringToarray= Array.from(givenString)
+    reverseStringArray= Array.prototype.reverse(stringToarray)
+    joinreversedArray= Array.prototype.join(reverseStringArray)
+    return joinreversedArray*/
+}
+console.log(reverseString("Bilal"))
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
