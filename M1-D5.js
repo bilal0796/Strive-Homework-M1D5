@@ -135,7 +135,17 @@ console.log(reverseString("Bilal"))
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+var inputString2=[]
+var array=[]
+const upperFirst=function (inputStringFromUser) {
+    array=inputStringFromUser.split(" ")
+    for (let i = 0; i < array.length; i++) {
+        array[i] = array[i].charAt(0).toUpperCase() + array[i].slice(1)
+    }
+    inputString2=array.join(" ")
+    return inputString2
+}
+console.log(upperFirst("Hi how are you, My name is bilal"))
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
