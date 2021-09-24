@@ -77,7 +77,16 @@ console.log(boundary(10),"As the input number is neither equals 400 nor within t
 */
 
 /* WRITE YOUR ANSWER HERE */
-
+const strivify=function(inputString){
+    if (inputString==="Strive"){
+        return inputString
+    }
+        else{
+        return "Strive"+" "+inputString
+    }
+}
+console.log(strivify("student"))
+console.log(strivify("Strive"))
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
  HINT: Modulus Operator
