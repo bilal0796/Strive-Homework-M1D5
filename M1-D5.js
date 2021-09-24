@@ -53,11 +53,23 @@ const crazyDiff=function(givenNumber){
 }
 console.log("The absolute difference between given number and 19 is multiplied by 3 since, given number is greater than 19 resultinh:",crazyDiff(20))
 console.log("The absoulute difference between given number and 19 is:", crazyDiff(14))
+
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
 
 /* WRITE YOUR ANSWER HERE */
+const boundary=function(n){
+    if ((n>=20 && n<=100)||n===400){
+        return true
+    }
+        else{
+        return false
+    }
+}
+console.log(boundary(39),"As the input is within gthe range of 20 and 200")
+console.log(boundary(400),"As the input number is equal 400")
+console.log(boundary(10),"As the input number is neither equals 400 nor within the range of 20 and 200")
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.
