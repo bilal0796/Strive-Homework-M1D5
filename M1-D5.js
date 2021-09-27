@@ -14,10 +14,10 @@ ASSIGNMENT RULES
 
 /* WRITE YOUR ANSWER HERE */
 var AreaOfRectangle
-const area = function(l1,l2) {
-    AreaOfRectangle = l1 * l2 
+const area = function (l1, l2) {
+    AreaOfRectangle = l1 * l2
 }
-area(2,4)
+area(2, 4)
 console.log(AreaOfRectangle)
 
 /* EXERCISE 2
@@ -26,16 +26,16 @@ console.log(AreaOfRectangle)
 */
 
 /* WRITE YOUR ANSWER HERE */
-const crazySum = function (integer1,integer2) {
-    if (integer1===integer2){
-        return (integer1+integer2)*3
+const crazySum = function (integer1, integer2) {
+    if (integer1 === integer2) {
+        return (integer1 + integer2) * 3
     }
-    else{
-        return (integer1+integer2)
+    else {
+        return (integer1 + integer2)
     }
 }
-console.log("The sum of two different input integers is:",crazySum(1,2))
-console.log("The sum of two same input integers will be the sum two integers multiplied by 3 which will sum to:",crazySum(1,1))
+console.log("The sum of two different input integers is:", crazySum(1, 2))
+console.log("The sum of two same input integers will be the sum two integers multiplied by 3 which will sum to:", crazySum(1, 1))
 
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
@@ -43,15 +43,15 @@ console.log("The sum of two same input integers will be the sum two integers mul
 */
 
 /* WRITE YOUR ANSWER HERE */
-const crazyDiff=function(givenNumber){
-    if (givenNumber>19){
-        return Math.abs(givenNumber-19)*3
+const crazyDiff = function (givenNumber) {
+    if (givenNumber > 19) {
+        return Math.abs(givenNumber - 19) * 3
     }
-    else{
-        return Math.abs(givenNumber-19)
+    else {
+        return Math.abs(givenNumber - 19)
     }
 }
-console.log("The absolute difference between given number and 19 is multiplied by 3 since, given number is greater than 19 resultinh:",crazyDiff(20))
+console.log("The absolute difference between given number and 19 is multiplied by 3 since, given number is greater than 19 resultinh:", crazyDiff(20))
 console.log("The absoulute difference between given number and 19 is:", crazyDiff(14))
 
 /* EXERCISE 4
@@ -59,17 +59,17 @@ console.log("The absoulute difference between given number and 19 is:", crazyDif
 */
 
 /* WRITE YOUR ANSWER HERE */
-const boundary=function(n){
-    if ((n>=20 && n<=100)||n===400){
+const boundary = function (n) {
+    if ((n >= 20 && n <= 100) || n === 400) {
         return true
     }
-        else{
+    else {
         return false
     }
 }
-console.log(boundary(39),"As the input is within gthe range of 20 and 200")
-console.log(boundary(400),"As the input number is equal 400")
-console.log(boundary(10),"As the input number is neither equals 400 nor within the range of 20 and 200")
+console.log(boundary(39), "As the input is within gthe range of 20 and 200")
+console.log(boundary(400), "As the input number is equal 400")
+console.log(boundary(10), "As the input number is neither equals 400 nor within the range of 20 and 200")
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.
@@ -77,12 +77,12 @@ console.log(boundary(10),"As the input number is neither equals 400 nor within t
 */
 
 /* WRITE YOUR ANSWER HERE */
-const strivify=function(inputString){
-    if (inputString==="Strive"){
+const strivify = function (inputString) {
+    if (inputString === "Strive") {
         return inputString
     }
-        else{
-        return "Strive"+" "+inputString
+    else {
+        return "Strive" + " " + inputString
     }
 }
 console.log(strivify("student"))
@@ -94,20 +94,20 @@ console.log(strivify("Strive"))
 */
 
 /* WRITE YOUR ANSWER HERE */
-const check3and7=function(inputnumber){
-    if (inputnumber<=0){
+const check3and7 = function (inputnumber) {
+    if (inputnumber <= 0) {
         console.log("Invalid Entry, please enter number greater than 0")
     }
-        else if((inputnumber%3===0)&&(inputnumber%7===0)){
+    else if ((inputnumber % 3 === 0) && (inputnumber % 7 === 0)) {
         console.log("The given number is a multiple of 3 and 7")
     }
-    else if(inputnumber%3===0){
+    else if (inputnumber % 3 === 0) {
         console.log("The given number is a multiple of 3")
     }
-    else if(inputnumber%7===0){
+    else if (inputnumber % 7 === 0) {
         console.log("The given number is a multiple of 7")
     }
-    else{
+    else {
         console.log("The given number is neither mulyiple of 3 nor 7")
     }
 }
@@ -118,10 +118,8 @@ check3and7(56)
 */
 
 /* WRITE YOUR ANSWER HERE */
-var stringToarray
-var reverseStringArray
-var joinreversedArray
-const reverseString= function (givenString) {
+
+const reverseString = function (givenString) {
     return givenString.split('').reverse().join('')
     /*stringToarray= Array.from(givenString)
     reverseStringArray= Array.prototype.reverse(stringToarray)
@@ -135,14 +133,15 @@ console.log(reverseString("Bilal"))
 */
 
 /* WRITE YOUR ANSWER HERE */
-var inputString2=[]
-var array=[]
-const upperFirst=function (inputStringFromUser) {
-    array=inputStringFromUser.split(" ")
+var inputString2 = []
+var array = []
+const upperFirst = function (inputStringFromUser) {
+    //return str.charAt(0).toUpperCase()+str.slice(1)
+    array = inputStringFromUser.split(" ")
     for (let i = 0; i < array.length; i++) {
         array[i] = array[i].charAt(0).toUpperCase() + array[i].slice(1)
     }
-    inputString2=array.join(" ")
+    inputString2 = array.join(" ")
     return inputString2
 }
 console.log(upperFirst("Hi how are you, My name is bilal"))
@@ -153,8 +152,8 @@ console.log(upperFirst("Hi how are you, My name is bilal"))
 
 /* WRITE YOUR ANSWER HERE */
 var modifiedstring
-const cutString=function (StringFromUser) {
-    modifiedstring=StringFromUser.substring(1,StringFromUser.length-1)
+const cutString = function (StringFromUser) {
+    modifiedstring = StringFromUser.substring(1, StringFromUser.length - 1)
     return modifiedstring
 }
 console.log(cutString("Bilal"))
@@ -178,8 +177,8 @@ console.log(arrayofrandomNumbers)
 console.log(giveMeRandom(3))*/
 
 const nums = new Set();
-const giveMeRandom=function (n) {
-    while(nums.size !== n) {
+const giveMeRandom = function (n) {
+    while (nums.size !== n) {
         nums.add(Math.floor(Math.random() * 10) + 1);
     }
     console.log(nums)
