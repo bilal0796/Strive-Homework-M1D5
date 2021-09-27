@@ -170,23 +170,29 @@ console.log("Today is:",currentDay)
         values: [3, 3, 4]
     }
 */
+header("8 function")
 var sumOfRolledDices={
   sum:0,
   arrayDicerolls:[],
 }
+var sumofreturns=0
+var returnValue=0
 const rollTheDices=function(diceNumber){
   if(diceNumber<=0){
     console.log("Please roll the dices minimum one time")
   }
   else{
     for(let i=1;i<=diceNumber;i++){
-      sumOfRolledDices.arrayDicerolls=dice()
+      returnValue=dice()
+      sumOfRolledDices.arrayDicerolls.push(returnValue)
+      sumofreturns+=returnValue
+      sumOfRolledDices.sum=sumofreturns
     }
-    return sumOfRolledDices.arrayDicerolls
+    return sumofreturns
   }
 }
-console.log(rollTheDices(3))
-
+console.log(rollTheDices(2))
+console.log(sumOfRolledDices)
 
 /* EXERCISE 9
    Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
