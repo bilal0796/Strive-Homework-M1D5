@@ -92,10 +92,10 @@
       */
 
       const addToTheSecond = function (content) {
-        content=document.querySelector("secondList")
-        createlist=document.createElement("LI")
-        addlist=document.createTextNode("hi")
-        createlist.appendChild(addlist)
+        content = document.createElement("LI");
+        var addcontent = document.createTextNode("4th");
+        content.appendChild(appendChild);
+        document.querySelector("secondList").appendChild(content);
       };
       addToTheSecond()
 
@@ -104,8 +104,13 @@
       */
 
       const addParagraph = function (content) {
-        //
+        var i=document.createElement("p")
+        var j=document.createTextNode("djhadjhadnbcabn nbas ")
+        i.appendChild(j)
+        content=document.querySelector("div")
+        content.appendChild(i)
       };
+      addParagraph()
 
       /* EXERCISE 7
        Write a function for making the first unordered list disappear.
@@ -120,8 +125,10 @@
       */
 
       const paintItGreen = function () {
-        //
+        let backgroundofUL=document.querySelector("UL")
+        backgroundofUL.style.color="blue"
       };
+      paintItGreen()
 
       /* EXERCISE 9
        Make the heading of the page change color every time the user clicks on it.
