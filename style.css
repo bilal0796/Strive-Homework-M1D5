@@ -21,9 +21,13 @@ body{
     margin: 1px;
     border-style: groove;
     border-radius: 8px;
+    transition: .3s ease-in-out;
+    
 }
 .cells:hover{
     border-color: rgb(46, 34, 4);
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
 }
 h1{
     font-size: 35px;
@@ -36,7 +40,36 @@ h1{
     font-size: medium;
     border-radius: 200px;
     border-color: rgb(255, 136, 24);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
 }
 .button:hover{
     border-color: rgb(46, 34, 4);
+}
+.highlight{
+    background-color: rgb(255, 136, 24);
+    color: rgb(66, 65, 65);
+}
+.cells24{
+    background-color: rgb(66, 65, 65);
+    color: rgb(255, 136, 24);
+    display: inline-block;
+    width: 30%;
+    padding-top: 5px;
+    min-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    border-color: rgb(255, 136, 24);
+    border-style: solid;
+    border-width: thick;
+    margin: 1px;
+    border-style: groove;
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+}
+.highlight24{
+    background-color: rgb(255, 136, 24);
+    color: rgb(66, 65, 65);
 }
