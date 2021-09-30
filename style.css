@@ -1,8 +1,11 @@
 body{
     background-color: black;
-    color: rgb(245, 102, 0);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 136, 24);
+    font-family: Architects Daughter ;
     text-align: center;
     padding-top: 20px;
-    font-weight: 200;
+}
+.cells{
+    background-color: orangered;
+    color: orangered;
 }

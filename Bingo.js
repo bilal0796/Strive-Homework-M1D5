@@ -1,1 +1,0 @@
-alert("Bing is working")

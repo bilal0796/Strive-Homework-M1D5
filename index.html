@@ -1,16 +1,54 @@
+<!--
+    MAIN TASK:
+    -- Create a bingo board with 76 cells.
+    -- 76 cells with numbers 1 to 76.
+    -- create button to randomize a number between 1 to 76.
+    -- The cell with a number as the random number should be highlighted.
+
+    EXTRA:
+    -- Make sure to always select a new number (eg. avoid randoming the number 10 three times).
+    -- Create a user board with 24 randomized numbers that highlights as the main board does.
+    -- Let the user choose how many user boards he's willing to play with and generate them before starting to play.
+
+    STEPS:
+    -- A container with 76 cells.
+    -- create div with id "board cells container".
+    -- creating sub-divs for each cell. We can do that manually writing in html. OR. We can do it dynamically using Js functions
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="Bingo.js" type="text/js">
-    <title>Document</title>
+    
+    <!--------linking css file with html file------------->
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+
+    <!--------linking GOOGLE FONT with html file------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    
+    <!--------title of tab------------->
+    <title>B!NGO Game</title>
 </head>
 <body>
-    <h1>lets play b!ngo</h1>
+    <!--------linking JavaScript file with html file------------->
+    <!--------use window.unload function to avoid error------------->
     <script src="Bingo.js"></script>
+    <h1>lets play b!ngo</h1>
     
+    <!--------Board------------->
+    <div id="BoardCells-container">
+        <div id="cells">1</div>
+        <div id="cells">2</div>
+        <div id="cells">3</div>
+        <div id="cells">4</div>
+    </div>
+
+
+
 </body>
 </html>
