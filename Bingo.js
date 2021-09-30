@@ -1,3 +1,7 @@
+let cellsContainer={
+    arrayofCells:[]
+}
+
 const displayCells = function() {
     
     //TODO: getting all the cells from (1 to 76)
@@ -15,11 +19,12 @@ const displayCells = function() {
         boardcellscontainerNode.appendChild(cellsforboard)
     }
 }
+
 const randomNumbergenerator = function(){
-    let randomNumberNode = Math.floor(Math.random()*2)
-    if(randomNumberNode=2){
-        alert("working")
-    }
+    let randomNumberNode = Math.floor(Math.random()*76)
+    alert(randomNumberNode)
+    // if(randomNumberNode>=1&&randomNumberNode<=76){
+    // }
 }
 
 window.onload = function() {

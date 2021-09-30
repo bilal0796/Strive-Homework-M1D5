@@ -20,5 +20,23 @@ body{
     border-width: thick;
     margin: 1px;
     border-style: groove;
+    border-radius: 8px;
 }
-
+.cells:hover{
+    border-color: rgb(46, 34, 4);
+}
+h1{
+    font-size: 35px;
+    font-weight: 900;
+}
+.button{
+    background-color: rgb(66, 65, 65);
+    color: rgb(255, 136, 24); 
+    font-family: Architects Daughter;
+    font-size: medium;
+    border-radius: 200px;
+    border-color: rgb(255, 136, 24);
+}
+.button:hover{
+    border-color: rgb(46, 34, 4);
+}
