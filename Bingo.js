@@ -15,15 +15,13 @@ const displayCells = function() {
         boardcellscontainerNode.appendChild(cellsforboard)
     }
 }
-    const randomNumberNode= document.getElementById("randomNumber-click")
 const randomNumbergenerator = function(){
-    // genrating random number using button
-    let button= document.createElement("button") //<button type="button"></button>
-    button.innerText="Click here to generate a number" //<button type="button">Click here to generate a number</button>
-    randomNumberNode.appendChild(button)
+    let randomNumberNode = Math.floor(Math.random()*2)
+    if(randomNumberNode=2){
+        alert("working")
+    }
 }
 
 window.onload = function() {
     displayCells()
-    randomNumbergenerator()
 }
