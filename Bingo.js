@@ -1,0 +1,1 @@
+alert("Bing is working")
