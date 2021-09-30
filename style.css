@@ -2,10 +2,23 @@ body{
     background-color: black;
     color: rgb(255, 136, 24);
     font-family: Architects Daughter ;
-    text-align: center;
-    padding-top: 20px;
+    max-width: 768px;
+    margin: 0 auto;
 }
 .cells{
-    background-color: orangered;
-    color: orangered;
+    background-color: rgb(66, 65, 65);
+    color: rgb(255, 136, 24);
+    display: inline-block;
+    width: 6%;
+    padding-top: 10px;
+    min-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    border-color: rgb(255, 136, 24);
+    border-style: solid;
+    border-width: thick;
+    margin: 1px;
+    border-style: groove;
 }
+
